@@ -34,4 +34,6 @@ in the linux command shell which is opened in a folder with the Kafka
 ## FAQ
 * The application has problems to write results to parquet file on hdfs. I did not have time to debug this. However, the application generates the data correctly. One can check that by uncommenting 'For testing' part and commenting 'Writing to parquet on hdfs' part
 * Remember to run Zookeeper and Kafka server before creating topics.
-* Remember to give proper permissions to your hdfs drive. You can do this by entering the command `sudo -u <user> hdfs dfs -chmod 775 /output`. More information about this problem you can find [here](https://community.cloudera.com/t5/Support-Questions/Permission-denied-user-mapred-access-WRITE-inode-quot-quot/m-p/16318)
+* Remember to give proper permissions to your hdfs drive. You can do this by entering the command  
+`sudo -u <user> hdfs dfs -chmod 775 /output`.  
+More information about this problem you can find [here](https://community.cloudera.com/t5/Support-Questions/Permission-denied-user-mapred-access-WRITE-inode-quot-quot/m-p/16318)
